@@ -49,13 +49,13 @@
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="author-firstname" class="form-label">Nome autore</label>
-                                    <input type="text" class="form-control" id="author-firstname" placeholder="Inserisci il nome dell'autore">
+                                    <input required type="text" class="form-control" id="author-firstname" placeholder="Inserisci il nome dell'autore">
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="author-lastname" class="form-label">Cognome autore</label>
-                                    <input type="text" class="form-control" id="author-lastname" placeholder="Inserisci il cognome dell'autore">
+                                    <input required type="text" class="form-control" id="author-lastname" placeholder="Inserisci il cognome dell'autore">
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="book-title" class="form-label">Titolo</label>
-                                    <input type="text" class="form-control" id="book-title" placeholder="Inserisci il titolo del libro">
+                                    <input required type="text" class="form-control" id="book-title" placeholder="Inserisci il titolo del libro">
                                     <div id="bookelp" class="form-text">Titolo versione italiana</div>
                                 </div>        
                             </div>
@@ -71,8 +71,8 @@
                         <div class="row">
                             <div class="col-4">
                                 <label for="gender" class="form-label">Genere</label>
-                                <select class="form-select" aria-label="Genere" id="gender">
-                                    <option selected>Scegli il genere</option>
+                                <select class="form-select" aria-label="Genere" id="gender" required>
+                                    <option value="" selected disabled>Scegli il genere</option>
                                     <option value="1">Donna</option>
                                     <option value="2">Uomo</option>
                                     <option value="3">Altro</option>
@@ -81,19 +81,17 @@
                             <div class="col-4">
                                 <div class="mb-3">
                                     <label for="publish-year" class="form-label">Anno di pubblicazione</label>
-                                    <input type="number" class="form-control" id="publish-year" placeholder="Inserisci l'anno" min="1920" max="2025">
+                                    <input required type="number" class="form-control" id="publish-year" placeholder="Inserisci l'anno" min="1920" max="2025">
                                 </div> 
                             </div>
                             <div class="col-4">
                                 <div class="mb-3">
                                     <label for="publish-year" class="form-label">ISBN#</label>
-                                    <input type="number" class="form-control" id="publish-year" placeholder="Inserisci il codice ISBN#">
+                                    <input  requiredtype="number" class="form-control" id="publish-year" placeholder="Inserisci il codice ISBN#">
                                 </div>
                             </div>
                         </div>
-
-                        <hr>
-
+                    <hr>
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-3">
@@ -102,9 +100,8 @@
                                   </div>
                             </div>
                         </div>
-                        
                         <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <input required type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
